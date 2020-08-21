@@ -1,4 +1,4 @@
-.App {
+/* .App {
     text-align: center;
 }
 
@@ -11,9 +11,10 @@
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
     }
-}
+} */
 
-.App-header {
+
+/* .App-header {
     background-color: #282c34;
     min-height: 100vh;
     display: flex;
@@ -35,7 +36,7 @@
     to {
         transform: rotate(360deg);
     }
-}
+} */
 
 .main {
     min-height: 80vh;
@@ -51,4 +52,22 @@
 
 .profile-pic {
     max-height: 250px;
+}
+
+.indicator-item {
+    background-color: black !important;
+}
+
+.indicators>.active {
+    background-color: lightgrey !important;
+}
+
+.tag {
+    padding-left: "8px" !important;
+    padding-right: "8px" !important;
+    padding-top: "4px" !important;
+    padding-bottom: "4px" !important;
+    border-radius: "2px" !important;
+    margin-right: "4px" !important;
+    font-weight: "bold" !important;
 }
