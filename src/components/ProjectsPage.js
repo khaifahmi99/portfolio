@@ -1,20 +1,59 @@
 import React, { useState, useEffect } from 'react';
+import db from './Firebase/firebase.js';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Banner from './Banner';
 import Card from './Card';
 
 function ProjectsPage() {
 
-    const [projects, setProjects] = useState([
-        {'name': 'project 1', 'year': '2020', 'description': 'description test lorem', 'tags': ['AWS', 'Data Science']},
-        {'name': 'project 2', 'year': '2019', 'description': 'description test lorem', 'tags': ['IOT']},
-    ]);
+    const [projects, setProjects] = useState([]);
+
+    // useEffect(async() => {
+    //     const temp = [];
+
+    //     try {
+    //         await db.collection('projects')
+    //             .get()
+    //             .then((querySnapshot) => {
+    //                 console.log('inside firebase: ' + querySnapshot.size);
+    //                 querySnapshot.forEach((doc) => {
+    //                     temp.push(doc.data());
+    //                 })
+    //                 setProjects(temp);
+    //             });
+    //     } catch (e) {
+    //         console.log('There is an error when fetching data');
+    //     } finally {
+    //         setProjects(temp);
+    //         console.log(projects);
+    //     }
+
+    // }, []);
 
     useEffect(() => {
-        
-    })
+
+        async function getData() {
+            const temp = [];
+            try {
+                await db.collection('projects')
+                    .get()
+                    .then((querySnapshot) => {
+                        console.log('inside firebase: ' + querySnapshot.size);
+                        querySnapshot.forEach((doc) => {
+                            temp.push(doc.data());
+                        })
+                    });
+            } catch (e) {
+                console.log('There is an error when fetching data');
+            } finally {
+                setProjects(temp);
+                console.log(projects);
+            }
+        }
+        getData();
+
+    }, []);
 
     return (
         <div>
