@@ -9,28 +9,6 @@ function ProjectsPage() {
 
     const [projects, setProjects] = useState([]);
 
-    // useEffect(async() => {
-    //     const temp = [];
-
-    //     try {
-    //         await db.collection('projects')
-    //             .get()
-    //             .then((querySnapshot) => {
-    //                 console.log('inside firebase: ' + querySnapshot.size);
-    //                 querySnapshot.forEach((doc) => {
-    //                     temp.push(doc.data());
-    //                 })
-    //                 setProjects(temp);
-    //             });
-    //     } catch (e) {
-    //         console.log('There is an error when fetching data');
-    //     } finally {
-    //         setProjects(temp);
-    //         console.log(projects);
-    //     }
-
-    // }, []);
-
     useEffect(() => {
 
         async function getData() {
@@ -41,7 +19,9 @@ function ProjectsPage() {
                     .then((querySnapshot) => {
                         console.log('inside firebase: ' + querySnapshot.size);
                         querySnapshot.forEach((doc) => {
-                            temp.push(doc.data());
+                            const proj = doc.data();
+                            proj['id'] = doc.id;
+                            temp.push(proj);
                         })
                     });
             } catch (e) {

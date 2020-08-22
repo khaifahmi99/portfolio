@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
 import ProjectsPage from './components/ProjectsPage';
+import SingleProjectPage from './components/SingleProjectPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/projects">
             <ProjectsPage />
           </Route>
+          <Route path="/project/:id" render={(props) => <SingleProjectPage {...props} />}/>
         </Switch>
       </div>
     </Router>

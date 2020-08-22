@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Tags from './Tags';
-import ProjectsPage from './ProjectsPage';
 
 function Card(props) {
 
@@ -9,15 +8,16 @@ function Card(props) {
 
     return (
         <div className="col s12 m6">
-            <div className="card darken-1">
-                <div className="card-content">
+            <div className="card grey darken-4 white-text">
+                <div className="card-content left-align">
                     <span className="card-title">{project.name}</span>
+                    <span>{project.endYear}</span>
                     <p>{project.shortDescription}</p>
                     <br/>
                     {project.tags.length > 0 && project.tags.map(tag => <Tags text={tag} att="purple darken-2 white-text" />)}
                 </div>
-                <div className="card-action">
-                    <a href="#" className="grey-text text-darken-1">Read More</a>
+                <div className="card-action left-align">
+                    <a href={'/project/' + project.id} className="white-text">Read More</a>
                 </div>
             </div>
         </div>
