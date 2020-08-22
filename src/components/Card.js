@@ -7,8 +7,8 @@ function Card(props) {
     const { project } = props;
 
     return (
-        <div className="col s12 m6">
-            <div className="card grey darken-4 white-text">
+        <div className="col s12 l6">
+            <div className="card large grey darken-4 white-text">
                 <div className="card-content left-align">
                     <span className="card-title">{project.name}</span>
                     <span>{project.endYear}</span>
