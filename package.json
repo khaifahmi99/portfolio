@@ -8,13 +8,16 @@
     "@testing-library/user-event": "^7.1.2",
     "firebase": "^6.0.2",
     "materialize-css": "^1.0.0",
+    "muicss": "^0.10.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-timeline-scribble": "^1.0.14",
-    "react-wordcloud": "^1.2.6"
+    "react-wordcloud": "^1.2.6",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
