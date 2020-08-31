@@ -24,7 +24,6 @@ function GalleryPage() {
                             gallery['id'] = doc.id;
     
                             temp.push(gallery);
-                            console.log('Gallery: ' + gallery);
                         })
                     }
                 )

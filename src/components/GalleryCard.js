@@ -8,7 +8,8 @@ function GalleryCard(props) {
         <div className="col s12 l6">
             <div className="card">
                 <div className="card-image">
-                    <img src="https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg" />
+                    <img src={gallery.urls[Math.floor(Math.random() * gallery.urls.length)]} />
+                    {console.log(Math.floor(Math.random() * gallery.urls.length))}
                 </div>
                 <div className="card-fab">
                 </div>
