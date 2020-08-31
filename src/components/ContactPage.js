@@ -84,7 +84,7 @@ function ContactPage() {
                 <Footer />
             </div>
         )
-    } else if (formType == 'complete') {
+    } else if (formType === 'complete') {
         return (
             <div>
                 <Navbar />

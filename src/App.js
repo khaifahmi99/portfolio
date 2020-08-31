@@ -6,6 +6,7 @@ import Home from './components/Home';
 import ProjectsPage from './components/ProjectsPage';
 import SingleProjectPage from './components/SingleProjectPage';
 import ContactPage from './components/ContactPage';
+import Gallery from './components/GalleryPage';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           <Route path="/project/:id" render={(props) => <SingleProjectPage {...props} />}/>
           <Route path="/contact">
             <ContactPage />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
           </Route>
         </Switch>
       </div>
