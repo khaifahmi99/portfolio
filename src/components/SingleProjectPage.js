@@ -32,17 +32,18 @@ function SingleProjectPage(props) {
     }, [])
 
     if (error === "" && !loading) {
-        console.log(project);
         return (
             <div>
                 <Navbar />
                 <div className="container">
-                    <h1>Welcome to project page {id}</h1>
-
-                    <h2>Project Name: {project.name}</h2>
+                    <h2>{project.name}</h2>
                     <p>{project.startYear} - {project.endYear}</p>
-                    {project.descriptions.length>0 && project.descriptions.map(description => <p>{description}</p>)}
+                    <p>{project.shortDescription}</p>
+                    <hr/>
+                    <p><b>Tags: </b></p>
+                    {project.tags.length>0 && project.tags.map(tag => <p>{tag}</p>)}
                 </div>
+                <br/><br/>
                 <Footer />
             </div>
         )

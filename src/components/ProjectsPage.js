@@ -39,7 +39,7 @@ function ProjectsPage() {
         <div>
             <Navbar />
             <div className="center-align">
-                <h1>{'{ Projects }'}</h1>
+                <h1>Projects</h1>
                 <div className="container">
                     <div className="row">
                         {projects.length>0 && projects.map(project => <Card project={project} />)}
