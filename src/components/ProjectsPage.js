@@ -8,6 +8,7 @@ import Card from './Card';
 function ProjectsPage() {
 
     const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
 
@@ -28,6 +29,7 @@ function ProjectsPage() {
                 console.log('There is an error when fetching data');
             } finally {
                 setProjects(temp);
+                setLoading(false);
                 console.log(projects);
             }
         }
@@ -35,20 +37,34 @@ function ProjectsPage() {
 
     }, []);
 
-    return (
-        <div>
-            <Navbar />
-            <div className="center-align">
-                <h1>Projects</h1>
-                <div className="container">
-                    <div className="row">
-                        {projects.length>0 && projects.map(project => <Card project={project} />)}
+
+    if (loading) {
+        return (
+            <div>
+                <Navbar />
+                <div className="container center-align">
+                    <h1>Projects</h1>
+                    <h2>Loading Project...</h2>
+                </div>
+                <Footer />
+            </div>
+        )
+    } else if (!loading) {
+        return (
+            <div>
+                <Navbar />
+                <div className="center-align">
+                    <h1>Projects</h1>
+                    <div className="container">
+                        <div className="row">
+                            {projects.length>0 && projects.map(project => <Card project={project} />)}
+                        </div>
                     </div>
                 </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
-    )
+        )
+    }
 }
 
 export default ProjectsPage;
