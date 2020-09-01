@@ -7,6 +7,7 @@ import ProjectsPage from './components/ProjectsPage';
 import SingleProjectPage from './components/SingleProjectPage';
 import ContactPage from './components/ContactPage';
 import Gallery from './components/GalleryPage';
+import SingleGalleryPage from './components/SingleGalleryPage';
 
 function App() {
   return (
@@ -23,9 +24,10 @@ function App() {
           <Route path="/contact">
             <ContactPage />
           </Route>
-          <Route path="/gallery">
+          <Route path="/galleries">
             <Gallery />
           </Route>
+          <Route path="/gallery/:id" render={(props) => <SingleGalleryPage {...props} />}/>
         </Switch>
       </div>
     </Router>

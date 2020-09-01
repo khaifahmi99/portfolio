@@ -24,7 +24,7 @@ function SingleProjectPage(props) {
                         setLoading(false);
                     })
             } catch (e) {
-                setError('There is an error in fetching the project data');
+                console.log('Single Project Page: An error occured in fetching the project data');
             }
         }
 

@@ -39,7 +39,7 @@ function GalleryPage() {
 
     if (loading) {
         return (
-            <div className="grey darken-4 white-text">
+            <div className="grey lighten-4 black-text">
                 <Navbar />
                 <div className="container center-align">
                     <h1>Gallery</h1>
@@ -51,10 +51,10 @@ function GalleryPage() {
         )
     } else if (!loading) {
         return(
-            <div className="grey darken-4">
+            <div className="grey lighten-4">
                 <Navbar />
                 <div className="container center-align">
-                    <h1 className="white-text">Gallery</h1>
+                    <h1 className="black-text">Gallery</h1>
                     <div className="row">
                     {galleryArray.length > 0 && galleryArray.map(gallery => <GalleryCard gallery={gallery}/>)}
                     </div>

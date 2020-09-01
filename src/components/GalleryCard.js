@@ -14,7 +14,7 @@ function GalleryCard(props) {
     }
 
     return (
-        <div className="col s12 l6">
+        <div className="col s12 m6">
             <div className="card">
                 <div className="card-image">
                     <img src={gallery.urls[Math.floor(Math.random() * gallery.urls.length)]} />
@@ -23,7 +23,7 @@ function GalleryCard(props) {
                 <div className="card-fab">
                 </div>
                 <div className="card-content left-align">
-                    <a className="btn-floating waves-effect waves-light black right"><i className="material-icons">arrow_forward</i></a>
+                    <a href={'/gallery/' + gallery.id} className="btn-floating waves-effect waves-light black right"><i className="material-icons">arrow_forward</i></a>
                     <span className="card-title">{gallery.title}</span>
                     <p><i class="fa fa-calendar-o" aria-hidden="true"></i> {convertSecondsToDate(gallery.ts.seconds)}</p>
                     <p> <i class="fa fa-map-marker" aria-hidden="true"></i> {gallery.location}</p>
