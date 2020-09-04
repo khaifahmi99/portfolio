@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import Skeleton from 'react-loading-skeleton';
 
 import db from './Firebase/firebase.js';
 
@@ -62,8 +63,12 @@ function SingleProjectPage(props) {
             <div>
                 <Navbar />
                 <div className="container">
-                    <h1>Welcome to project page {id}</h1>
-                    <h1>Loading Information...</h1>
+                    <h2>{<Skeleton />}</h2>
+                    <p>{<Skeleton width={200}/>}</p>
+                    <p>{<Skeleton count={5}/>}</p>
+                    <hr/>
+                    <p>{<Skeleton width={100}/>}</p>
+                    {[...Array(6)].map((x, i) => <p>{<Skeleton width={200}/>}</p> )}
                 </div>
                 <Footer />
             </div>
