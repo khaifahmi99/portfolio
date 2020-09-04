@@ -31,7 +31,7 @@ function ProjectsPage() {
                 console.log('There is an error when fetching data');
             } finally {
                 setProjects(temp);
-                // setLoading(false);
+                setLoading(false);
                 console.log(projects);
             }
         }
