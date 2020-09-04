@@ -5,6 +5,7 @@ import Skeleton from 'react-loading-skeleton';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Card from './Card';
+import Tags from './Tags';
 
 function ProjectsPage() {
 
@@ -30,7 +31,7 @@ function ProjectsPage() {
                 console.log('There is an error when fetching data');
             } finally {
                 setProjects(temp);
-                setLoading(false);
+                // setLoading(false);
                 console.log(projects);
             }
         }
@@ -47,7 +48,21 @@ function ProjectsPage() {
                     <h1>Projects</h1>
                     <div className="row">
                         {[...Array(4)].map((x, i) =>
-                            <div className="col s12 l6"><Skeleton height={500}/><br/><br/></div>
+                            <div className="col s12 l6">
+                                <div className="card large grey lighten-1 white-text">
+                                    <div className="card-content left-align">
+                                        <span className="card-title">{<Skeleton width={400}/>}</span>
+                                        <span>{<Skeleton width={200}/>}</span>
+                                        <p>{<Skeleton count={6}/>}</p>
+                                        <br/>
+                                        <span>{<Skeleton width={300} />}</span>
+                                    </div>
+                                    <div className="card-action left-align">
+                                        <a className="white-text">{<Skeleton width={200} style={{padding: "4px"}}/>}</a>
+                                    </div>
+                                </div>
+                                <br/><br/>
+                            </div>
                         )}
                     </div>
                 </div>
