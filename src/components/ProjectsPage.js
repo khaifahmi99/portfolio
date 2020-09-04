@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import db from './Firebase/firebase.js';
+import Skeleton from 'react-loading-skeleton';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -44,7 +45,11 @@ function ProjectsPage() {
                 <Navbar />
                 <div className="container center-align">
                     <h1>Projects</h1>
-                    <h2>Loading Project...</h2>
+                    <div className="row">
+                        {[...Array(4)].map((x, i) =>
+                            <div className="col s12 l6"><Skeleton height={500}/><br/><br/></div>
+                        )}
+                    </div>
                 </div>
                 <Footer />
             </div>
