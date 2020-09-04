@@ -24,13 +24,13 @@ export default class Navbar extends React.Component {
                             <ul class="right hide-on-med-and-down">
                                 {/* <li><a href="#">Profile</a></li> */}
                                 <li><a href="/projects">Projects</a></li>
-                                {/* <li><a href="#">Hobbies</a></li> */}
+                                <li><a href="/galleries">Galleries</a></li>
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
                             <ul className="sidenav" id="mobile-demo" ref={ (sidenav) => {this.sidenav = sidenav} }>
                                 {/* <li><a href="#">Profile</a></li> */}
                                 <li><a href="/projects">Projects</a></li>
-                                {/* <li><a href="#">Hobbies</a></li> */}
+                                <li><a href="/galleries">Galleries</a></li>
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
                         </div>
