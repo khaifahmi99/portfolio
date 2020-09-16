@@ -77,7 +77,7 @@ function ContactPage() {
                         <div className="col s8 l6 offset-s2 offset-l3">
                             <h5 className="center-align">I can also be reach by these platforms</h5>
                         </div>
-                        <div className="col s8 l4 offset-l4 offset-s2 center-align">
+                        <div className="col s10 l6 offset-l3 offset-s1 center-align">
                             {/* <p>I can also be reached from any other platform. I can be reached via phone at +61401043474 or my personal email at khaifahmi99@gmail.com. Alternatively, I can be reached via LinkedIn. Let it be to connect, having enquiries, sharing stories, or anything else, do not hesitate and feel free to reach me out.</p> */}
                             <p>
                                 <a href="https://www.linkedin.com/in/khaifahmi/" style={{display: "block"}} className="btn black"><i className="fa fa-linkedin fa-lg left" aria-hidden="true"></i>LinkedIn</a>
