@@ -1,8 +1,7 @@
 import React from 'react';
 import M from 'materialize-css';
-import home from '../assets/home.jpg';
 import sky from '../assets/sky.jpg';
-import profile from '../assets/profile.jpg';
+import ProfileUi from 'react-profile-card';
 
 export default class Banner extends React.Component {
     constructor(props) {
@@ -11,10 +10,13 @@ export default class Banner extends React.Component {
 
     componentDidMount() {
         M.Parallax.init(this.parallax, {});
-        this.parallaxContainer.style.height = "80vh";
+        this.parallaxContainer.style.height = "90vh";
         this.parallaxContainer.style.marginBottom = "60px";
         this.parallaxContainer.style.width = "100%";
     }
+
+    // profile pic url: 
+    // https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/profile.jpg?alt=media&token=d889af1f-b0b0-466a-abc7-3e071e719168
 
     render() {
         return (
@@ -22,12 +24,16 @@ export default class Banner extends React.Component {
             <div className="parallax-container center valign-wrapper" ref={ (parallaxContainer) => {this.parallaxContainer = parallaxContainer} }>
                 <div className="row">
                     <div className="container">
-                        <div className="col l4 s12 center-align">
-                            <img className="responsive-img circle profile-pic" src={profile} alt=""/>
+                        <div className="col l5 s8 offset-s2">
+                            <div className="row hide-on-large-only"></div>
+                            <ProfileUi 
+                                imgUrl="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/profile.jpg?alt=media&token=d889af1f-b0b0-466a-abc7-3e071e719168"
+                                name='Khai Fahmi' 
+                                designation='Melbourne' 
+                            />
                         </div>
-                        <div className="col l8 s12 white-text left-align">
-                            <h3>Khai Fahmi</h3>
-                            <h5>Machine Learning and App Development</h5>
+                        <div className="col l7 s12 white-text left-align">
+                            <h4>Machine Learning and App Development</h4>
                             <p className="left-align">I do projects around topics that I am interested and passionate about such as machine learning, app development, cloud computing and Internet of Things. Actively seeking for opportunities to further enhance my skills and to make life more interesting.</p>
                             <hr/>
                             <div className="row">
