@@ -10,7 +10,9 @@
     "materialize-css": "^1.0.0",
     "muicss": "^0.10.2",
     "react": "^16.13.1",
+    "react-data-table-component": "^6.11.4",
     "react-dom": "^16.13.1",
+    "react-lineto": "^3.2.0",
     "react-loading-skeleton": "^2.1.1",
     "react-profile-card": "^0.1.4",
     "react-router": "^5.2.0",
@@ -19,7 +21,8 @@
     "react-timeline-scribble": "^1.0.14",
     "react-wordcloud": "^1.2.6",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^1.2.1"
+    "semantic-ui-react": "^1.2.1",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
