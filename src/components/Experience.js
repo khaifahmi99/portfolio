@@ -1,4 +1,6 @@
 import React from 'react';
+import Typing from 'react-typing-animation';
+
 import profile from '../assets/profile.png';
 import csiro from '../assets/csiro.png';
 import usku from '../assets/usku.png';
@@ -12,10 +14,13 @@ export default class Experience extends React.Component {
         return (
             <div style={{paddingTop: "48px", paddingBottom: "48px"}}>
                 <div className="container">
-                    <h3 className="left-align">Past Experience</h3>
+                    <Typing>
+                        <h3 className="left-align">Past Experience</h3>
+                        <Typing.Delay ms={1000000}/>
+                    </Typing>
                     <div className="row">
                         <div className="col s12">
-                        <div className="card grey darken-4 z-depth-5">
+                        <div className="card grey darken-4 z-depth-5 hoverable">
                             <div className="card-content white-text">
                                 <div className="row">
                                     <div className="col s3 center-align">
@@ -43,7 +48,7 @@ export default class Experience extends React.Component {
 
                     <div className="row">
                         <div className="col s12">
-                        <div className="card grey darken-4 z-depth-5">
+                        <div className="card grey darken-4 z-depth-5 hoverable">
                             <div className="card-content white-text">
                                 <div className="row">
                                     <div className="col s3 center-align">

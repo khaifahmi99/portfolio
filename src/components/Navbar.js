@@ -1,6 +1,8 @@
 import React from 'react';
 import M from 'materialize-css';
 
+import '../styles/navbar.css';
+
 export default class Navbar extends React.Component {
     constructor(props) {
         super(props);
@@ -22,17 +24,13 @@ export default class Navbar extends React.Component {
                                 <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                             </div>
                             <ul className="right hide-on-med-and-down">
-                                {/* <li><a href="#">Profile</a></li> */}
                                 <li><a href="/projects">Projects</a></li>
                                 <li><a href="/academics">Academics</a></li>
-                                {/* <li><a href="#">Hobbies</a></li> */}
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
                             <ul className="sidenav" id="mobile-demo" ref={ (sidenav) => {this.sidenav = sidenav} }>
-                                {/* <li><a href="#">Profile</a></li> */}
                                 <li><a href="/projects">Projects</a></li>
                                 <li><a href="/academics">Academics</a></li>
-                                {/* <li><a href="#">Hobbies</a></li> */}
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
                         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import M from 'materialize-css';
 import profile from '../assets/profile.png';
 import Tags from './Tags';
+import Typing from 'react-typing-animation';
 
 export default class RecentProjects extends React.Component {
     constructor(props) {
@@ -16,7 +17,10 @@ export default class RecentProjects extends React.Component {
         return (
             <div className="grey lighten-4" style={{paddingBottom: "24px", paddingTop: "24px"}}>
                 <div className="container">
-                    <h3 className="left-align">Recent Projects</h3>
+                    <Typing>
+                        <h3 className="left-align">Recent Projects</h3>
+                        <Typing.Delay ms={1000000}/>
+                    </Typing>
                 </div>
                 <div className="carousel carousel-slider center" ref={ (carousel) => {this.carousel = carousel} }>
     
@@ -89,7 +93,7 @@ export default class RecentProjects extends React.Component {
                     </div>
                 </div>
                 <div className="center-align" style={{marginBottom: "96px"}}>
-                    <a href="/projects" className="btn black">See All</a>
+                    <a href="/projects" className="btn black hoverable waves-effect waves-light">See All</a>
                 </div>
             </div>
         )

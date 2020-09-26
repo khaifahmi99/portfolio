@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Timeline, Event } from "react-timeline-scribble";
+import Typing from 'react-typing-animation';
 
 export default class EducationTimeline extends React.Component {
     constructor(props){
@@ -10,7 +11,10 @@ export default class EducationTimeline extends React.Component {
     render() {
         return (
           <div className="left-align container">
-            <h3>Education</h3>
+            <Typing>
+              <h3>Education</h3>
+              <Typing.Delay ms={1000000}/>
+            </Typing>
             <Timeline>
               <Event interval={"2018 – 2021"} title={"Bachelor in Computer Science (Data Science and IoT major)"} subtitle={"Swinburne University of Technology | CGPA: 4.0"}>
                 Currently in 3rd year of the programme while maintaining a CGPA of 4.0 and weighted average mark (WAM) of 88.00%

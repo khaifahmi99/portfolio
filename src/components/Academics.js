@@ -7,6 +7,7 @@ import ListCard from './ListCard';
 
 import LineTo from 'react-lineto';
 import DataTable from 'react-data-table-component';
+import Typing from 'react-typing-animation';
 
 import resume from '../assets/resume.png';
 import transcript from '../assets/transcript.png';
@@ -79,10 +80,10 @@ function Academics() {
                 <Navbar />
     
                 <div className="center-align">
-                    <h1 className="">Academics</h1>
+                    <h1 className="">ACADEMICS</h1>
                 </div>
                 <div>
-                    <a className="btn right black" onClick={changeView} style={{margin: "20px"}}>Table View<i class="material-icons white-text right">view_column</i></a>
+                    <a className="btn right black waves-effect waves-light hoverable" onClick={changeView} style={{margin: "20px"}}>Table View<i class="material-icons white-text right">view_column</i></a>
                 </div>
                 <div>
                     <div className="row">
@@ -134,10 +135,13 @@ function Academics() {
                 <Navbar />
     
                 <div className="center-align">
-                    <h1 className="">Academics</h1>
+                    <Typing startDelay={400}>
+                        <h1 className="">ACADEMICS</h1>
+                        <Typing.Delay ms={1000000000} />
+                    </Typing>
                 </div>
                 <div>
-                    <a className="btn right black" onClick={changeView} style={{margin: "20px"}}>Card View<i class="material-icons white-text right">view_stream</i></a>
+                    <a className="btn right black waves-effect waves-light hoverable" onClick={changeView} style={{margin: "20px"}}>Card View<i class="material-icons white-text right">view_stream</i></a>
                 </div>
                 <div>
                     <div className="row">

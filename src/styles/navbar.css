@@ -1,0 +1,5 @@
+ul li a:hover {
+    border-bottom: 2px #FF9966 solid;
+    transition: border-width 0.15s linear;
+    color: #FF9966;
+}

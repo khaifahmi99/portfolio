@@ -18,21 +18,21 @@ function ListCard(props) {
                                 <p>{units[0]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[0]}</span></p>
                             </div>
                             <div className="col l6 s12">
-                                <p>{units[1]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[0]}</span></p>
+                                <p>{units[1]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[1]}</span></p>
                             </div>
                             <div className="col l6 s12 hide-on-large-only">
-                                <p>{units[2]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[0]}</span></p>
+                                <p>{units[2]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[2]}</span></p>
                             </div>
                             <div className="col l6 s12 hide-on-large-only">
-                                <p>{units[3]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[0]}</span></p>
+                                <p>{units[3]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[3]}</span></p>
                             </div>
                         </div>
                         <div className="row hide-on-med-and-down">
                             <div className="col l6 s12">
-                                <p>{units[2]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[0]}</span></p>
+                                <p>{units[2]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[2]}</span></p>
                             </div>
                             <div className="col l6 s12">
-                                <p>{units[3]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[0]}</span></p>
+                                <p>{units[3]} <span className="white-text green darken-2" style={{fontWeight: "bold", padding: "5px 10px", marginLeft: "5px", borderRadius: "5px"}}>{scores[3]}</span></p>
                             </div>
                         </div>
                     </div>

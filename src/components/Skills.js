@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactWordcloud from 'react-wordcloud';
+import Typing from 'react-typing-animation';
 
 export default class Skills extends React.Component {
     constructor(props) {
@@ -102,7 +103,10 @@ export default class Skills extends React.Component {
         return (
             <div className="black white-text">
                 <div className="container">
+                <Typing>
                     <h3 className="left-align" style={{paddingTop: "64px"}}>Technical Skills</h3>
+                    <Typing.Delay ms={1000000}/>
+                </Typing>
                 </div>
                 <div>
                     <ReactWordcloud options={{ rotations: 1, rotationAngles: [0, 0],}}

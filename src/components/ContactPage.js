@@ -1,10 +1,12 @@
 import React from 'react';
+import { useState } from 'react';
+
+import Typing from 'react-typing-animation';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 import meeting from '../assets/meeting.png';
-import { useState } from 'react';
 
 import db from './Firebase/firebase';
 
@@ -37,7 +39,15 @@ function ContactPage() {
                 <Navbar />
     
                 <div className="container">
-                    <h1 className="center-align">REACH ME OUT.</h1>
+                        <Typing startDelay={400} speed={80}>
+                            <h1 className="center-align">
+                                REACH ME OUT.
+                                <Typing.Delay ms={1000} />
+                                <Typing.Backspace count={6} />
+                                E OUT.
+                                <Typing.Delay ms={1000000000} />
+                            </h1>
+                        </Typing>
                     <div className="row">
                         <form className="col s12 l6">
                             <div className="input-field col s12">
@@ -57,7 +67,7 @@ function ContactPage() {
                                 <label htmlFor="message">Message</label>
                             </div>
                             <div className="center-align">
-                                <input onClick={handleSubmit} className="btn black" value="Send" />
+                                <input onClick={handleSubmit} className="btn black hoverable" value="Send" />
                             </div>
                         </form>
                         <div className="col s12 l6 center-align hide-on-med-and-down">
@@ -80,13 +90,13 @@ function ContactPage() {
                         <div className="col s10 l6 offset-l3 offset-s1 center-align">
                             {/* <p>I can also be reached from any other platform. I can be reached via phone at +61401043474 or my personal email at khaifahmi99@gmail.com. Alternatively, I can be reached via LinkedIn. Let it be to connect, having enquiries, sharing stories, or anything else, do not hesitate and feel free to reach me out.</p> */}
                             <p>
-                                <a href="https://www.linkedin.com/in/khaifahmi/" style={{display: "block"}} className="btn black"><i className="fa fa-linkedin fa-lg left" aria-hidden="true"></i>LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/khaifahmi/" style={{display: "block"}} className="btn black hoverable waves-effect waves-light"><i className="fa fa-linkedin fa-lg left" aria-hidden="true"></i>LinkedIn</a>
                             </p>
                             <p>
-                                <a href="#" style={{display: "block"}} className="btn black"><i className="fa fa-phone fa-lg left" aria-hidden="true"></i>0401043474</a>
+                                <a href="#" style={{display: "block"}} className="btn black hoverable waves-effect waves-light"><i className="fa fa-phone fa-lg left" aria-hidden="true"></i>0401043474</a>
                             </p>
                             <p>
-                                <a href="#" style={{display: "block"}} className="btn black"><i className="fa fa-envelope fa-lg left" aria-hidden="true"></i>khaifahmi99@gmail.com</a>
+                                <a href="#" style={{display: "block"}} className="btn black hoverable waves-effect waves-light"><i className="fa fa-envelope fa-lg left" aria-hidden="true"></i>khaifahmi99@gmail.com</a>
                             </p>
                         </div>
                     </div>

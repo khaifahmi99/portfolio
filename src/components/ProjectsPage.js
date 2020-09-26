@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import db from './Firebase/firebase.js';
 import Skeleton from 'react-loading-skeleton';
+import Typing from 'react-typing-animation';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -74,7 +75,10 @@ function ProjectsPage() {
             <div>
                 <Navbar />
                 <div className="center-align">
-                    <h1>Projects</h1>
+                <Typing>
+                        <h1 className="">PROJECTS</h1>
+                        <Typing.Delay ms={1000000000} />
+                    </Typing>
                     <div className="container">
                         <div className="row">
                             {projects.length>0 && projects.map(project => <Card project={project} />)}

@@ -8,7 +8,7 @@ function Card(props) {
 
     return (
         <div className="col s12 l6">
-            <div className="card large grey darken-4 white-text">
+            <div className="card large grey darken-4 white-text hoverable">
                 <div className="card-content left-align">
                     <span className="card-title">{project.name}</span>
                     <span>{project.endYear}</span>
