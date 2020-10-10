@@ -14,7 +14,7 @@ const Tags = ({text, att}) => {
                     marginBottom: "6px",
                     borderRadius: "4px",
                     fontWeight: "bold",
-                    display: "inline-block"
+                    display: "inline-block",
                 }}>{text}</span>
     )
 }

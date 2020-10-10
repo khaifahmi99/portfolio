@@ -23,12 +23,12 @@ export default class Navbar extends React.Component {
                                 <a href="/" className="brand-logo center-align hide-on-large-only" style={{fontFamily: "comic sans ms"}}>KHAI FAHMI.</a>
                                 <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                             </div>
-                            <ul className="right hide-on-med-and-down">
+                            <ul className="right hide-on-med-and-down" style={{fontFamily: "Montserrat"}}>
                                 <li><a href="/projects">Projects</a></li>
                                 <li><a href="/academics">Academics</a></li>
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
-                            <ul className="sidenav" id="mobile-demo" ref={ (sidenav) => {this.sidenav = sidenav} }>
+                            <ul className="sidenav" id="mobile-demo" ref={ (sidenav) => {this.sidenav = sidenav} }  style={{fontFamily: "Montserrat"}}>
                                 <li><a href="/projects">Projects</a></li>
                                 <li><a href="/academics">Academics</a></li>
                                 <li><a href="/contact">Contact</a></li>

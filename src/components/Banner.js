@@ -22,7 +22,7 @@ export default class Banner extends React.Component {
             <div className="parallax-container center valign-wrapper" ref={ (parallaxContainer) => {this.parallaxContainer = parallaxContainer} }>
                 <div className="row">
                     <div className="container">
-                        <div className="col l5 s8 offset-s2">
+                        <div className="col l5 s8 offset-s2" style={{fontFamily: "Montserrat"}}>
                             <div className="row hide-on-large-only"></div>
                             <ProfileUi 
                                 imgUrl="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/profile.jpg?alt=media&token=d889af1f-b0b0-466a-abc7-3e071e719168"
@@ -32,7 +32,7 @@ export default class Banner extends React.Component {
                         </div>
                         <div className="col l7 s12 white-text left-align">
                             <Typing startDelay={400}>
-                                <h4>
+                                <h4 style={{fontFamily: "Montserrat"}}>
                                     Machine Learning and 
                                     <Typing.Delay ms={500} />
                                     <Typing.Backspace count={3} />
@@ -42,7 +42,7 @@ export default class Banner extends React.Component {
                             </Typing>
                             <p className="left-align">I do projects around topics that I am interested and passionate about such as machine learning, app development, cloud computing and Internet of Things. Actively seeking for opportunities to further enhance my skills and to make life more interesting.</p>
                             <hr/>
-                            <div className="row">
+                            <div className="row"  style={{fontFamily: "Montserrat"}}>
                                 <a href="https://www.linkedin.com/in/khaifahmi/" className="btn white black-text margin-btn hoverable waves-effect waves-dark">LinkedIn<i className="fa fa-linkedin-square right" aria-hidden="true"></i></a>
                                 <a href="https://github.com/khaifahmi99" className="btn white black-text margin-btn hoverable waves-effect waves-dark">Github<i className="fa fa-github right" aria-hidden="true"></i></a>
                             </div>

@@ -104,12 +104,18 @@ export default class Skills extends React.Component {
             <div className="black white-text">
                 <div className="container">
                 <Typing>
-                    <h3 className="left-align" style={{paddingTop: "64px"}}>Technical Skills</h3>
+                    <h3 className="left-align" style={{paddingTop: "64px", fontFamily: "Montserrat"}}>Technical Skills</h3>
                     <Typing.Delay ms={1000000}/>
                 </Typing>
                 </div>
                 <div>
-                    <ReactWordcloud options={{ rotations: 1, rotationAngles: [0, 0],}}
+                    <ReactWordcloud 
+                        options={{ 
+                            rotations: 1, 
+                            rotationAngles: [0, 0],
+                            fontFamily: "Montserrat",
+                            fontWeight: "bold"
+                        }}
                         words={words} />
                 </div>
             </div>

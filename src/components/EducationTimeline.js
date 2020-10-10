@@ -12,7 +12,7 @@ export default class EducationTimeline extends React.Component {
         return (
           <div className="left-align container">
             <Typing>
-              <h3>Education</h3>
+              <h3 style={{fontFamily: "Montserrat"}}>Education</h3>
               <Typing.Delay ms={1000000}/>
             </Typing>
             <Timeline>
