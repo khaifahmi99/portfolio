@@ -46,7 +46,7 @@ function ProjectsPage() {
             <div>
                 <Navbar />
                 <div className="container center-align">
-                    <h1>Projects</h1>
+                    <h1 style={{fontFamily: "Montserrat"}}>Projects</h1>
                     <div className="row">
                         {[...Array(4)].map((x, i) =>
                             <div className="col s12 l6">
@@ -76,7 +76,7 @@ function ProjectsPage() {
                 <Navbar />
                 <div className="center-align">
                 <Typing>
-                        <h1 className="">PROJECTS</h1>
+                        <h1 style={{fontFamily: "Montserrat"}}>PROJECTS</h1>
                         <Typing.Delay ms={1000000000} />
                     </Typing>
                     <div className="container">

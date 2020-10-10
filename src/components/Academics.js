@@ -80,7 +80,7 @@ function Academics() {
                 <Navbar />
     
                 <div className="center-align">
-                    <h1 className="">ACADEMICS</h1>
+                    <h1 style={{fontFamily: "Montserrat"}}>ACADEMICS</h1>
                 </div>
                 <div>
                     <a className="btn right black waves-effect waves-light hoverable" onClick={changeView} style={{margin: "20px"}}>Table View<i class="material-icons white-text right">view_column</i></a>
@@ -136,12 +136,12 @@ function Academics() {
     
                 <div className="center-align">
                     <Typing startDelay={400}>
-                        <h1 className="">ACADEMICS</h1>
+                        <h1 style={{fontFamily: "Montserrat"}}>ACADEMICS</h1>
                         <Typing.Delay ms={1000000000} />
                     </Typing>
                 </div>
                 <div>
-                    <a className="btn right black waves-effect waves-light hoverable" onClick={changeView} style={{margin: "20px"}}>Card View<i class="material-icons white-text right">view_stream</i></a>
+                    <a className="btn right black waves-effect waves-light hoverable" onClick={changeView} style={{margin: "20px", fontFamily: "Montserrat"}}>Card View<i class="material-icons white-text right">view_stream</i></a>
                 </div>
                 <div>
                     <div className="row">

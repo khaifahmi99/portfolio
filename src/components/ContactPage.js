@@ -40,7 +40,7 @@ function ContactPage() {
     
                 <div className="container">
                         <Typing startDelay={400} speed={80}>
-                            <h1 className="center-align">
+                            <h1 className="center-align" style={{fontFamily: "Montserrat"}}>
                                 REACH ME OUT.
                                 <Typing.Delay ms={1000} />
                                 <Typing.Backspace count={6} />
@@ -67,7 +67,7 @@ function ContactPage() {
                                 <label htmlFor="message">Message</label>
                             </div>
                             <div className="center-align">
-                                <input onClick={handleSubmit} className="btn black hoverable" value="Send" />
+                                <input onClick={handleSubmit} className="btn black hoverable" value="Send" style={{fontFamily: "Montserrat"}} />
                             </div>
                         </form>
                         <div className="col s12 l6 center-align hide-on-med-and-down">
@@ -79,13 +79,13 @@ function ContactPage() {
                     </div>
                     <br/>
                     <div className="wrapper">
-                        <span className="divider-text">OR</span>
+                        <span className="divider-text" style={{fontFamily: "Montserrat"}}>OR</span>
                     </div>
                     <br/>
                     <br/>
                     <div className="row">
                         <div className="col s8 l6 offset-s2 offset-l3">
-                            <h5 className="center-align">I can also be reach by these platforms</h5>
+                            <h5 className="center-align" style={{fontFamily: "Montserrat"}}>I can also be reach by these platforms</h5>
                         </div>
                         <div className="col s10 l6 offset-l3 offset-s1 center-align">
                             {/* <p>I can also be reached from any other platform. I can be reached via phone at +61401043474 or my personal email at khaifahmi99@gmail.com. Alternatively, I can be reached via LinkedIn. Let it be to connect, having enquiries, sharing stories, or anything else, do not hesitate and feel free to reach me out.</p> */}

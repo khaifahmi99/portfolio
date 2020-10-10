@@ -37,8 +37,8 @@ function SingleProjectPage(props) {
             <div>
                 <Navbar />
                 <div className="container">
-                    <h2>{project.name}</h2>
-                    <p>{project.startYear} - {project.endYear}</p>
+                    <h2 style={{fontFamily: "Montserrat"}}>{project.name}</h2>
+                    <p style={{fontFamily: "Montserrat"}}>{project.startYear} - {project.endYear}</p>
                     <p>{project.shortDescription}</p>
                     <hr/>
                     <p><b>Tags: </b></p>
