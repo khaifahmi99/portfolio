@@ -17,6 +17,10 @@ function Academics() {
     const [view, setView] = useState("Table");
 
     const data = [
+        { id: 17, semester: 'semester 4', year: '2020', unit: 'Topics in Computer Science', score: '97', grade: 'HD' },
+        { id: 18, semester: 'semester 4', year: '2020', unit: 'Software Engineering Project B', score: '95', grade: 'HD' },
+        { id: 19, semester: 'semester 4', year: '2020', unit: 'Big Data Architecture and Application', score: '85', grade: 'HD' },
+        { id: 20, semester: 'semester 4', year: '2020', unit: 'Professional Issues in Information Technology', score: '80', grade: 'HD' },
         { id: 1, semester: 'semester 4', year: '2020', unit: 'IOT Programming', score: '91', grade: 'HD' },
         { id: 2, semester: 'semester 4', year: '2020', unit: 'Software Engineering Project A', score: '93', grade: 'HD' },
         { id: 3, semester: 'semester 4', year: '2020', unit: 'Intoduction to Data Science', score: '82*', grade: 'HD*' },
@@ -102,11 +106,13 @@ function Academics() {
                             </div>
                         </div>
                         <div className="col s12 l9">
+                            <ListCard className="O" year="2020" semester="semester 5" units={["Topics in Computer Science", "Software Engineering Project B", "Big Data Architecture and Application", "Professional Issues in Information Technology"]} scores={["97", "95", "85", "80"]} />
                             <ListCard className="A" year="2020" semester="semester 4" units={["Introduction to Data Science", "IOT Programming", "Software Engineering Project A", "IT Project Management"]} scores={["82*", "91", "93", "73*"]} />
                             <ListCard className="B" year="2019" semester="semester 3" units={["Software Development for Mobile Devices", "IT Security", "Fundamentals of Data Management", "Computer Logics and Essentials"]} scores={["85", "86", "85", "91"]} />
                             <ListCard className="C" year="2019" semester="semester 2" units={["Object Oriented Programming", "Development Project 1: Tools and Practices", "Cloud Computing", "Data Visualisation"]} scores={["85", "90", "86", "86"]} />
                             <ListCard className="D" year="2018" semester="semester 1" units={["Introduction to Programming", "Foundation of Statistics", "Creating Web Application", "Network and Switching"]} scores={["90", "85", "95", "84"]} />
                             
+                            <LineTo delay={0} borderColor="black" from="O" to="A" />
                             <LineTo delay={0} borderColor="black" from="A" to="B" />
                             <LineTo delay={0} borderColor="black" from="B" to="C" />
                             <LineTo delay={0} borderColor="black" from="C" to="D" />
