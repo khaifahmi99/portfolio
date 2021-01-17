@@ -52,19 +52,19 @@ export default class Experience extends React.Component {
                                 <div className="row">
                                     <div className="col s3 center-align">
                                         <p>
-                                            <img className="responsive-img" src={usku} alt="company-logo"/> 
+                                            <img className="responsive-img" src={csiro} alt="company-logo"/> 
                                         </p>
                                     </div>
                                     <div className="col s9">
                                         <div className="col s6">
-                                            <span className="card-title" style={{fontFamily: "Montserrat"}}>Usku Technologies</span>
+                                            <span className="card-title" style={{fontFamily: "Montserrat"}}>CSIRO Data61</span>
                                         </div>
                                         <div className="col s6 right-align">
-                                            <span style={{fontFamily: "Montserrat"}}>2018 - 2020</span>
+                                            <span style={{fontFamily: "Montserrat"}}>2019 - 2020</span>
                                         </div>
                                         <div className="col s12">
-                                            <h4 style={{fontFamily: "Montserrat"}}>Fullstack Developer</h4>
-                                            <p>Worked as a team in developing the website and mobile application during early stages. Has been actively maintaining and adding features to the system on handling large traffic of logistic requests around Melbourne. Include adoption of cutting edge technologies in the application such as Slack API, Android application, React.js and Google cloud services.</p>
+                                            <h4 style={{fontFamily: "Montserrat"}}>Research Affiliate</h4>
+                                            <p>Awarded the CSIRO Data61 Summer Vacation Scholarship 2019/2020. Has been involved in a project that requires the implementation in the area of machine learning, natural language processing, data science and website development. The project is mainly using these technology to analyse a collection of resumes. Has been closely working under the supervision of 2 researchers from Swinburne University of Technology and Western Sydney University.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -79,19 +79,19 @@ export default class Experience extends React.Component {
                                 <div className="row">
                                     <div className="col s3 center-align">
                                         <p>
-                                            <img className="responsive-img" src={csiro} alt="company-logo"/> 
+                                            <img className="responsive-img" src={usku} alt="company-logo"/> 
                                         </p>
                                     </div>
                                     <div className="col s9">
                                         <div className="col s6">
-                                            <span className="card-title" style={{fontFamily: "Montserrat"}}>CSIRO Data61</span>
+                                            <span className="card-title" style={{fontFamily: "Montserrat"}}>Usku Technologies</span>
                                         </div>
                                         <div className="col s6 right-align">
-                                            <span style={{fontFamily: "Montserrat"}}>2019 - 2020</span>
+                                            <span style={{fontFamily: "Montserrat"}}>2018 - 2020</span>
                                         </div>
                                         <div className="col s12">
-                                            <h4 style={{fontFamily: "Montserrat"}}>Research Affiliate</h4>
-                                            <p>Awarded the CSIRO Data61 Summer Vacation Scholarship 2019/2020. Has been involved in a project that requires the implementation in the area of machine learning, natural language processing, data science and website development. The project is mainly using these technology to analyse a collection of resumes. Has been closely working under the supervision of 2 researchers from Swinburne University of Technology and Western Sydney University.</p>
+                                            <h4 style={{fontFamily: "Montserrat"}}>Fullstack Developer</h4>
+                                            <p>Worked as a team in developing the website and mobile application during early stages. Has been actively maintaining and adding features to the system on handling large traffic of logistic requests around Melbourne. Include adoption of cutting edge technologies in the application such as Slack API, Android application, React.js and Google cloud services.</p>
                                         </div>
                                     </div>
                                 </div>
