@@ -1,7 +1,7 @@
 import React from 'react';
 import Typing from 'react-typing-animation';
 
-import profile from '../assets/profile.png';
+import mobble from '../assets/mobble.png';
 import csiro from '../assets/csiro.png';
 import usku from '../assets/usku.png';
 
@@ -25,6 +25,33 @@ export default class Experience extends React.Component {
                                 <div className="row">
                                     <div className="col s3 center-align">
                                         <p>
+                                            <img className="responsive-img" src={mobble} alt="company-logo"/> 
+                                        </p>
+                                    </div>
+                                    <div className="col s9">
+                                        <div className="col s6">
+                                            <span className="card-title" style={{fontFamily: "Montserrat"}}>Mobble.io</span>
+                                        </div>
+                                        <div className="col s6 right-align">
+                                            <span style={{fontFamily: "Montserrat"}}>2020 - 2021</span>
+                                        </div>
+                                        <div className="col s12">
+                                            <h4 style={{fontFamily: "Montserrat"}}>Junior Developer Intern</h4>
+                                            <p>Developing and maintaining website and mobile application for a farming management startup, Mobble.io. I worked in a team of 4 developers with diverse background, and technologies used include React and React Native, Typescript, REST, AWS and GraphQL. I have been highly involved in all the SDLC areas and also taught to deploy the application using CI/CD technologies.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col s12">
+                        <div className="card grey darken-4 z-depth-5 hoverable">
+                            <div className="card-content white-text">
+                                <div className="row">
+                                    <div className="col s3 center-align">
+                                        <p>
                                             <img className="responsive-img" src={usku} alt="company-logo"/> 
                                         </p>
                                     </div>
@@ -33,7 +60,7 @@ export default class Experience extends React.Component {
                                             <span className="card-title" style={{fontFamily: "Montserrat"}}>Usku Technologies</span>
                                         </div>
                                         <div className="col s6 right-align">
-                                            <span style={{fontFamily: "Montserrat"}}>2018 - 2021</span>
+                                            <span style={{fontFamily: "Montserrat"}}>2018 - 2020</span>
                                         </div>
                                         <div className="col s12">
                                             <h4 style={{fontFamily: "Montserrat"}}>Fullstack Developer</h4>
@@ -45,7 +72,6 @@ export default class Experience extends React.Component {
                         </div>
                         </div>
                     </div>
-
                     <div className="row">
                         <div className="col s12">
                         <div className="card grey darken-4 z-depth-5 hoverable">
