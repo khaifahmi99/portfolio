@@ -33,10 +33,37 @@ export default class Experience extends React.Component {
                                             <span className="card-title" style={{fontFamily: "Montserrat"}}>Mobble.io</span>
                                         </div>
                                         <div className="col s6 right-align">
+                                            <span style={{fontFamily: "Montserrat"}}>2021 - Current</span>
+                                        </div>
+                                        <div className="col s12">
+                                            <h4 style={{fontFamily: "Montserrat"}}>Junior Full-Stack Developer</h4>
+                                            <p>Promoted from the previous intern role to take up more tasks in the company which includes more Devops tasks such as CI/CD and using test framework to ensure that the application is easy to manage and scalable</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col s12">
+                        <div className="card grey darken-4 z-depth-5 hoverable">
+                            <div className="card-content white-text">
+                                <div className="row">
+                                    <div className="col s3 center-align">
+                                        <p>
+                                            <img className="responsive-img" src={mobble} alt="company-logo"/> 
+                                        </p>
+                                    </div>
+                                    <div className="col s9">
+                                        <div className="col s6">
+                                            <span className="card-title" style={{fontFamily: "Montserrat"}}>Mobble.io</span>
+                                        </div>
+                                        <div className="col s6 right-align">
                                             <span style={{fontFamily: "Montserrat"}}>2020 - 2021</span>
                                         </div>
                                         <div className="col s12">
-                                            <h4 style={{fontFamily: "Montserrat"}}>Junior Developer Intern</h4>
+                                            <h4 style={{fontFamily: "Montserrat"}}>Junior Full-Stack Developer Intern</h4>
                                             <p>Developing and maintaining website and mobile application for a farming management startup, Mobble.io. I worked in a team of 4 developers with diverse background, and technologies used include React and React Native, Typescript, REST, AWS and GraphQL. I have been highly involved in all the SDLC areas and also taught to deploy the application using CI/CD technologies.</p>
                                         </div>
                                     </div>
