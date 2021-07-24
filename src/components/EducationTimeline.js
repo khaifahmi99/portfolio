@@ -23,10 +23,10 @@ export default class EducationTimeline extends React.Component {
                 to graduate in July 2021.
               </Event>
               <Event interval={"2017 – 2018"} title={"Monash University Foundation Year"} subtitle={"Monash University | MUFY Score: 89%"}>
-                Achieved an Australian Matriculation Score of 89.00% for the Monash University Foundation Year programme offered 
+                {`Achieved an Australian Matriculation Score of 89.00% for the Monash University Foundation Year programme offered 
                 by Monash University at Sunway College, KL. This programme is part of the requirements to pursue the bachelor programme 
                 in Australia. Subjects taken include Information Technology, Advanced Mathematics, English and Mathematics and was
-                awarded the 'High Achiever' award at the end of the programme.
+                awarded the 'High Achiever' award at the end of the programme.`}
               </Event>
             </Timeline>
           </div>

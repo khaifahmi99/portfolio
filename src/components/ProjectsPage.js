@@ -6,7 +6,6 @@ import Typing from 'react-typing-animation';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Card from './Card';
-import Tags from './Tags';
 
 function ProjectsPage() {
 
@@ -21,19 +20,17 @@ function ProjectsPage() {
                 await db.collection('projects')
                     .get()
                     .then((querySnapshot) => {
-                        console.log('inside firebase: ' + querySnapshot.size);
                         querySnapshot.forEach((doc) => {
                             const proj = doc.data();
-                            proj['id'] = doc.id;
+                            proj.id = doc.id;
                             temp.push(proj);
                         })
                     });
             } catch (e) {
-                console.log('There is an error when fetching data');
+
             } finally {
                 setProjects(temp);
                 setLoading(false);
-                console.log(projects);
             }
         }
         getData();
@@ -48,8 +45,8 @@ function ProjectsPage() {
                 <div className="container center-align">
                     <h1 style={{fontFamily: "Montserrat"}}>Projects</h1>
                     <div className="row">
-                        {[...Array(4)].map((x, i) =>
-                            <div className="col s12 l6">
+                        {[...Array(4)].map((num) =>
+                            <div key={num} className="col s12 l6">
                                 <div className="card large grey lighten-1 white-text">
                                     <div className="card-content left-align">
                                         <span className="card-title">{<Skeleton width={400}/>}</span>
@@ -81,7 +78,7 @@ function ProjectsPage() {
                     </Typing>
                     <div className="container">
                         <div className="row">
-                            {projects.length>0 && projects.map(project => <Card project={project} />)}
+                            {projects.length>0 && projects.map((project, i) => <Card id={`project-${i + 1}`} key={project} project={project} />)}
                         </div>
                     </div>
                 </div>

@@ -87,7 +87,7 @@ function Academics() {
                     <h1 style={{fontFamily: "Montserrat"}}>ACADEMICS</h1>
                 </div>
                 <div>
-                    <a className="btn right black waves-effect waves-light hoverable" onClick={changeView} style={{margin: "20px"}}>Table View<i class="material-icons white-text right">view_column</i></a>
+                    <a className="btn right black waves-effect waves-light hoverable" onClick={changeView} style={{margin: "20px"}}>Table View<i className="material-icons white-text right">view_column</i></a>
                 </div>
                 <div>
                     <div className="row">
@@ -98,11 +98,11 @@ function Academics() {
                             <div>
                                 <img src={resume} alt="" style={{width: "250px"}}/>
                                 <br/>
-                                <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/Resume%202020.pdf?alt=media&token=034718ce-8d40-447f-9138-537806221fa9" download>Resume<i class="material-icons black-text right">file_download</i></a>
+                                <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/Resume%202020.pdf?alt=media&token=034718ce-8d40-447f-9138-537806221fa9" download rel="noreferrer">Resume<i className="material-icons black-text right">file_download</i></a>
                                 <br/><br/>
                                 <img src={transcript} alt="" style={{width: "250px"}}/>
                                 <br/>
-                                <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/AcademicRecord-2020.pdf?alt=media&token=3db00fe1-244f-483e-b2b3-8a8e89cf380d" download>Academic Transcript<i class="material-icons black-text right">file_download</i></a>
+                                <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/AcademicRecord-2020.pdf?alt=media&token=3db00fe1-244f-483e-b2b3-8a8e89cf380d" download rel="noreferrer">Academic Transcript<i className="material-icons black-text right">file_download</i></a>
                             </div>
                         </div>
                         <div className="col s12 l9">
@@ -121,13 +121,13 @@ function Academics() {
                         <div className="col s12 m6 hide-on-large-only right-align">
                             <img className="responsive-img" src={resume} alt=""/>
                             <br/>
-                            <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/Resume%202020.pdf?alt=media&token=034718ce-8d40-447f-9138-537806221fa9" download>Resume<i class="material-icons black-text right">file_download</i></a>
+                            <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/Resume%202020.pdf?alt=media&token=034718ce-8d40-447f-9138-537806221fa9" download rel="noreferrer">Resume<i className="material-icons black-text right">file_download</i></a>
                         </div>
                         <br/><br/>
                         <div className="col s12 m6 hide-on-large-only right-align">
                             <img className="responsive-img" src={transcript} alt=""/>
                             <br/>
-                            <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/AcademicRecord-2020.pdf?alt=media&token=6d22b75c-6fd5-4144-80a1-efe55c9b4ceb" download>Academic Transcript<i class="material-icons black-text right">file_download</i></a>
+                            <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/AcademicRecord-2020.pdf?alt=media&token=6d22b75c-6fd5-4144-80a1-efe55c9b4ceb" download rel="noreferrer">Academic Transcript<i className="material-icons black-text right">file_download</i></a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@ function Academics() {
                     </Typing>
                 </div>
                 <div>
-                    <a className="btn right black waves-effect waves-light hoverable" onClick={changeView} style={{margin: "20px", fontFamily: "Montserrat"}}>Card View<i class="material-icons white-text right">view_stream</i></a>
+                    <a className="btn right black waves-effect waves-light hoverable" onClick={changeView} style={{margin: "20px", fontFamily: "Montserrat"}}>Card View<i className="material-icons white-text right">view_stream</i></a>
                 </div>
                 <div>
                     <div className="row">
@@ -158,11 +158,11 @@ function Academics() {
                             <div>
                                 <img src={resume} alt="" style={{width: "250px"}}/>
                                 <br/>
-                                <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/Resume%202020.pdf?alt=media&token=034718ce-8d40-447f-9138-537806221fa9" download>Resume<i class="material-icons black-text right">file_download</i></a>
+                                <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/Resume%202020.pdf?alt=media&token=034718ce-8d40-447f-9138-537806221fa9" download rel="noreferrer">Resume<i className="material-icons black-text right">file_download</i></a>
                                 <br/><br/>
                                 <img src={transcript} alt="" style={{width: "250px"}}/>
                                 <br/>
-                                <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/AcademicRecord-2020.pdf?alt=media&token=3db00fe1-244f-483e-b2b3-8a8e89cf380d" download>Academic Transcript<i class="material-icons black-text right">file_download</i></a>
+                                <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/AcademicRecord-2020.pdf?alt=media&token=3db00fe1-244f-483e-b2b3-8a8e89cf380d" download rel="noreferrer">Academic Transcript<i className="material-icons black-text right">file_download</i></a>
                             </div>
                         </div>
                         <div className="col s12 l9">
@@ -178,13 +178,13 @@ function Academics() {
                         <div className="col s12 m6 hide-on-large-only right-align">
                             <img className="responsive-img" src={resume} alt=""/>
                             <br/>
-                            <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/Resume%202020.pdf?alt=media&token=034718ce-8d40-447f-9138-537806221fa9" download>Resume<i class="material-icons black-text right">file_download</i></a>
+                            <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/Resume%202020.pdf?alt=media&token=034718ce-8d40-447f-9138-537806221fa9" download rel="noreferrer">Resume<i className="material-icons black-text right">file_download</i></a>
                         </div>
                         <br/><br/>
                         <div className="col s12 m6 hide-on-large-only right-align">
                             <img className="responsive-img" src={transcript} alt=""/>
                             <br/>
-                            <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/AcademicRecord-2020.pdf?alt=media&token=6d22b75c-6fd5-4144-80a1-efe55c9b4ceb" download>Academic Transcript<i class="material-icons black-text right">file_download</i></a>
+                            <a className="black-text" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/khaifahmicreative.appspot.com/o/AcademicRecord-2020.pdf?alt=media&token=6d22b75c-6fd5-4144-80a1-efe55c9b4ceb" download rel="noreferrer">Academic Transcript<i className="material-icons black-text right">file_download</i></a>
                         </div>
                     </div>
                 </div>

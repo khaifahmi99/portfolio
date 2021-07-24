@@ -19,14 +19,16 @@ function ContactPage() {
         e.persist();
         try {
             await db.collection('contact').doc().set(contactForm);
-            updateContactForm({...contactForm, formType: 'complete'})
-        } catch (err) {
-            console.log('Contact Page: DB Update Fail')
-        } 
+            updateContactForm({
+                ...contactForm, 
+                formType: 'complete',
+            })
+        } catch (e) {
+            
+        }
     }
 
     function handleChange(e) {
-        console.log(updateContactForm)
         e.persist()
         updateContactForm({...contactForm, [e.target.name]: e.target.value})
     }
@@ -63,7 +65,7 @@ function ContactPage() {
                                 <label htmlFor="email">Email Address</label>
                             </div>
                             <div className="input-field col s12">
-                                <textarea onChange={handleChange} name="message" id="message" className="materialize-textarea"></textarea>
+                                <textarea onChange={handleChange} name="message" id="message" className="materialize-textarea" />
                                 <label htmlFor="message">Message</label>
                             </div>
                             <div className="center-align">
@@ -90,13 +92,13 @@ function ContactPage() {
                         <div className="col s10 l6 offset-l3 offset-s1 center-align">
                             {/* <p>I can also be reached from any other platform. I can be reached via phone at +61401043474 or my personal email at khaifahmi99@gmail.com. Alternatively, I can be reached via LinkedIn. Let it be to connect, having enquiries, sharing stories, or anything else, do not hesitate and feel free to reach me out.</p> */}
                             <p>
-                                <a href="https://www.linkedin.com/in/khaifahmi/" style={{display: "block"}} className="btn black hoverable waves-effect waves-light"><i className="fa fa-linkedin fa-lg left" aria-hidden="true"></i>LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/khaifahmi/" style={{display: "block"}} className="btn black hoverable waves-effect waves-light"><i className="fa fa-linkedin fa-lg left" aria-hidden="true" />LinkedIn</a>
                             </p>
                             <p>
-                                <a href="#" style={{display: "block"}} className="btn black hoverable waves-effect waves-light"><i className="fa fa-phone fa-lg left" aria-hidden="true"></i>0401043474</a>
+                                <a href="#" style={{display: "block"}} className="btn black hoverable waves-effect waves-light"><i className="fa fa-phone fa-lg left" aria-hidden="true" />0401043474</a>
                             </p>
                             <p>
-                                <a href="#" style={{display: "block"}} className="btn black hoverable waves-effect waves-light"><i className="fa fa-envelope fa-lg left" aria-hidden="true"></i>khaifahmi99@gmail.com</a>
+                                <a href="#" style={{display: "block"}} className="btn black hoverable waves-effect waves-light"><i className="fa fa-envelope fa-lg left" aria-hidden="true" />khaifahmi99@gmail.com</a>
                             </p>
                         </div>
                     </div>

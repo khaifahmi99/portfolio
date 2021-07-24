@@ -14,10 +14,10 @@ function Card(props) {
                     <span style={{fontFamily: "Montserrat"}}>{project.endYear}</span>
                     <p>{project.shortDescription}</p>
                     <br/>
-                    {project.tags.length > 0 && project.tags.map(tag => <Tags text={tag} att="purple darken-2 white-text" />)}
+                    {project.tags.length > 0 && project.tags.map(tag => <Tags key={tag} text={tag} att="purple darken-2 white-text" />)}
                 </div>
                 <div className="card-action left-align">
-                    <a href={'/project/' + project.id} className="white-text" style={{fontFamily: "Montserrat"}}>Read More</a>
+                    <a href={`/project/${  project.id}`} className="white-text" style={{fontFamily: "Montserrat"}}>Read More</a>
                 </div>
             </div>
         </div>

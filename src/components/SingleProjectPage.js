@@ -42,7 +42,7 @@ function SingleProjectPage(props) {
                     <p>{project.shortDescription}</p>
                     <hr/>
                     <p><b>Tags: </b></p>
-                    {project.tags.length>0 && project.tags.map(tag => <p>{tag}</p>)}
+                    {project.tags.length > 0 && project.tags.map(tag => <p key={tag}>{tag}</p>)}
                 </div>
                 <br/><br/>
                 <Footer />
@@ -68,7 +68,7 @@ function SingleProjectPage(props) {
                     <p>{<Skeleton count={5}/>}</p>
                     <hr/>
                     <p>{<Skeleton width={100}/>}</p>
-                    {[...Array(6)].map((x, i) => <p>{<Skeleton width={200}/>}</p> )}
+                    {[...Array(6)].map((num) => <p key={`skeleton-${num}`}>{<Skeleton width={200}/>}</p> )}
                 </div>
                 <Footer />
             </div>

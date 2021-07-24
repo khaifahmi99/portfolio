@@ -6,7 +6,7 @@ import CanvasJSReact from '../lib/canvasjs.react';
 
 function Skills() {
     const [view, setView] = useState("wordcloud");
-    const [words, setWords] = useState([
+    const words = [
         { text: "Data Science", value: 64 },
         { text: "Internet of Things", value: 20 },
         { text: "IoT", value: 55 },
@@ -92,11 +92,9 @@ function Skills() {
         { text: "NLTK", value: 32 },
         { text: "Spacy", value: 34 },
         { text: "Keras", value: 43 },
-    ]);
-    const [data, setData] = useState("");
+    ];
 
-    var CanvasJS = CanvasJSReact.CanvasJS;
-    var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+    const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
     const options = {
         title: {
@@ -162,7 +160,7 @@ function Skills() {
                 </div>
             </div>
         )
-    } else {
+    } 
         return (
             <div className="white-text black">
                 <div className="container">
@@ -180,7 +178,7 @@ function Skills() {
                 </div>
             </div>
         )
-    }
+    
 }
 
 export default Skills;
