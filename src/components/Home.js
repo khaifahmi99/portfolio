@@ -9,19 +9,19 @@ import Experience from './Experience';
 import RecentProjects from './RecentProjects';
 
 const Home = () => {
-    return (
-        <div>
-            <Navbar />
-            <div className="main">
-                <Banner />
-                <EducationTimeline />
-                <Skills />
-                <Experience />
-                <RecentProjects />
-            </div>
-            <Footer />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Navbar />
+      <div className="main">
+        <Banner />
+        <EducationTimeline />
+        <Skills />
+        <Experience />
+        <RecentProjects />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
 export default Home;
