@@ -2,6 +2,7 @@ import React from 'react';
 import M from 'materialize-css';
 
 import '../styles/navbar.css';
+import { shouldSeeAcademics } from '../config/visibility';
 
 export default class Navbar extends React.Component {
   componentDidMount() {
@@ -44,9 +45,11 @@ export default class Navbar extends React.Component {
                 <li>
                   <a href="/projects">Projects</a>
                 </li>
-                <li>
-                  <a href="/academics">Academics</a>
-                </li>
+                {shouldSeeAcademics() && (
+                    <li>
+                        <a href="/academics">Academics</a>
+                    </li>
+                )}
                 <li>
                   <a href="/contact">Contact</a>
                 </li>
@@ -62,9 +65,11 @@ export default class Navbar extends React.Component {
                 <li>
                   <a href="/projects">Projects</a>
                 </li>
-                <li>
-                  <a href="/academics">Academics</a>
-                </li>
+                {shouldSeeAcademics() && (
+                    <li>
+                    <a href="/academics">Academics</a>
+                    </li>
+                )}
                 <li>
                   <a href="/contact">Contact</a>
                 </li>

@@ -6,6 +6,7 @@ import ProjectsPage from './components/ProjectsPage';
 import SingleProjectPage from './components/SingleProjectPage';
 import ContactPage from './components/ContactPage';
 import Academics from './components/Academics';
+import { shouldSeeAcademics } from './config/visibility';
 
 
 function App() {
@@ -23,9 +24,11 @@ function App() {
           <Route path="/contact">
             <ContactPage />
           </Route>
+          {shouldSeeAcademics() && (
           <Route path="/academics">
             <Academics />
           </Route>
+          )}
         </Switch>
       </div>
     </Router>
