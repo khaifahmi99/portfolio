@@ -4,10 +4,6 @@ import Tags from './Tags';
 import Typing from 'react-typing-animation';
 
 export default class RecentProjects extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         M.Carousel.init(this.carousel ,{fullWidth: true, indicators: true});
     }

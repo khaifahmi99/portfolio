@@ -30,7 +30,7 @@ function SingleProjectPage(props) {
         }
 
         getData();
-    }, [])
+    }, [id])
 
     if (error === "" && !loading) {
         return (

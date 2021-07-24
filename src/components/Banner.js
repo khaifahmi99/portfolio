@@ -5,9 +5,6 @@ import ProfileUi from 'react-profile-card';
 import Typing from 'react-typing-animation';
 
 export default class Banner extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     componentDidMount() {
         M.Parallax.init(this.parallax, {});
@@ -51,7 +48,7 @@ export default class Banner extends React.Component {
                 </div>
 
                 <div className="parallax" ref={ (parallax) => {this.parallax = parallax} }>
-                    <img src={sky}/>
+                    <img src={sky} alt={'background-sky'} />
                 </div>
             </div>
         </div>

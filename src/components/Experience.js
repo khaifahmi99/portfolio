@@ -5,13 +5,7 @@ import mobble from '../assets/mobble.png';
 import csiro from '../assets/csiro.png';
 import usku from '../assets/usku.png';
 
-export default class Experience extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return (
+const Experience = () => (
             <div style={{paddingTop: "48px", paddingBottom: "48px"}}>
                 <div className="container">
                     <Typing>
@@ -130,5 +124,5 @@ export default class Experience extends React.Component {
                 </div>
             </div>
         )
-    }
-}
+
+export default Experience;

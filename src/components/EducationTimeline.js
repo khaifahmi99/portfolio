@@ -3,12 +3,7 @@ import React from "react";
 import { Timeline, Event } from "react-timeline-scribble";
 import Typing from 'react-typing-animation';
 
-export default class EducationTimeline extends React.Component {
-    constructor(props){
-        super(props);
-    }
-
-    render() {
+const EducationTimeline = () => {
         return (
           <div className="left-align container">
             <Typing>
@@ -31,5 +26,6 @@ export default class EducationTimeline extends React.Component {
             </Timeline>
           </div>
         )
-    }
 }
+
+export default EducationTimeline;

@@ -4,10 +4,6 @@ import M from 'materialize-css';
 import '../styles/navbar.css';
 
 export default class Navbar extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         M.Sidenav.init(this.sidenav);
     }
