@@ -8,7 +8,7 @@ import Footer from './Footer';
 
 import meeting from '../assets/meeting.png';
 
-import db from './Firebase/firebase';
+import db from './Firebase/firebase.js';
 
 function ContactPage() {
   const [contactForm, updateContactForm] = useState({
