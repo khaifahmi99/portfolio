@@ -1,5 +1,5 @@
 export const features = {
-    academics: {
-        visible: false,
-    }
-}
+  academics: {
+    visible: false,
+  },
+};

@@ -46,9 +46,9 @@ export default class Navbar extends React.Component {
                   <a href="/projects">Projects</a>
                 </li>
                 {shouldSeeAcademics() && (
-                    <li>
-                        <a href="/academics">Academics</a>
-                    </li>
+                  <li>
+                    <a href="/academics">Academics</a>
+                  </li>
                 )}
                 <li>
                   <a href="/contact">Contact</a>
@@ -66,9 +66,9 @@ export default class Navbar extends React.Component {
                   <a href="/projects">Projects</a>
                 </li>
                 {shouldSeeAcademics() && (
-                    <li>
+                  <li>
                     <a href="/academics">Academics</a>
-                    </li>
+                  </li>
                 )}
                 <li>
                   <a href="/contact">Contact</a>
