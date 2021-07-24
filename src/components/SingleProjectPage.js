@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
-import db from './Firebase/firebase.js';
+import db from './Firebase/firebase';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
