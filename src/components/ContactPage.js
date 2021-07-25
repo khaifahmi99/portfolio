@@ -152,24 +152,22 @@ function ContactPage() {
                 </a>
               </p>
               <p>
-                <a
-                  href="#"
+                <button
                   style={{ display: 'block' }}
                   className="btn black hoverable waves-effect waves-light"
                 >
                   <i className="fa fa-phone fa-lg left" aria-hidden="true" />
                   0401043474
-                </a>
+                </button>
               </p>
               <p>
-                <a
-                  href="#"
+                <button
                   style={{ display: 'block' }}
                   className="btn black hoverable waves-effect waves-light"
                 >
                   <i className="fa fa-envelope fa-lg left" aria-hidden="true" />
                   khaifahmi99@gmail.com
-                </a>
+                </button>
               </p>
             </div>
           </div>

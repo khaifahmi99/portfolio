@@ -30,13 +30,12 @@ export default class Navbar extends React.Component {
                 >
                   KHAI FAHMI.
                 </a>
-                <a
-                  href="#"
+                {/* <a
                   data-target="mobile-demo"
                   className="sidenav-trigger"
                 >
                   <i className="material-icons">menu</i>
-                </a>
+                </a> */}
               </div>
               <ul
                 className="right hide-on-med-and-down"
