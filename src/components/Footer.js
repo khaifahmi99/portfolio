@@ -45,36 +45,36 @@ export default class Footer extends React.Component {
                 </ul>
                 <div className="hide-on-large-only center-align">
                   <div className="col s3">
-                    <a href="#">
+                    <button>
                       <i
                         className="fa fa-phone fa-lg white-text"
                         aria-hidden="true"
                       />
-                    </a>
+                    </button>
                   </div>
                   <div className="col s3">
-                    <a href="#">
+                    <button>
                       <i
                         className="fa fa-envelope fa-lg white-text"
                         aria-hidden="true"
                       />
-                    </a>
+                    </button>
                   </div>
                   <div className="col s3">
-                    <a href="#">
+                    <button>
                       <i
                         className="fa fa-linkedin fa-lg white-text"
                         aria-hidden="true"
                       />
-                    </a>
+                    </button>
                   </div>
                   <div className="col s3">
-                    <a href="#">
+                    <button>
                       <i
                         className="fa fa-github fa-lg white-text"
                         aria-hidden="true"
                       />
-                    </a>
+                    </button>
                   </div>
                   <br />
                 </div>
@@ -165,7 +165,7 @@ export default class Footer extends React.Component {
                       className="white-text"
                       href="https://www.linkedin.com/in/khaifahmi/"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       <i
                         className="fa-li fa fa-linkedin fa-lg"
@@ -179,7 +179,7 @@ export default class Footer extends React.Component {
                       className="white-text"
                       href="https://github.com/khaifahmi99"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       <i
                         className="fa-li fa fa-github fa-lg"
@@ -205,7 +205,7 @@ export default class Footer extends React.Component {
                     className="white-text"
                     href="https://www.linkedin.com/in/khaifahmi/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                   >
                     <i className="fa fa-linkedin fa-lg" aria-hidden="true" /> :
                     https://www.linkedin.com/in/khaifahmi/
@@ -216,7 +216,7 @@ export default class Footer extends React.Component {
                     className="white-text"
                     href="https://github.com/khaifahmi99"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                   >
                     <i className="fa fa-github fa-lg" aria-hidden="true" /> :
                     https://github.com/khaifahmi99

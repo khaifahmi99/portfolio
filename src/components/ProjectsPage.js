@@ -55,9 +55,9 @@ function ProjectsPage() {
                     <span>{<Skeleton width={300} />}</span>
                   </div>
                   <div className="card-action left-align">
-                    <a className="white-text">
+                    <button className="white-text">
                       {<Skeleton width={200} style={{ padding: '4px' }} />}
-                    </a>
+                    </button>
                   </div>
                 </div>
                 <br />
