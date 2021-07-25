@@ -1,12 +1,11 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
 import db from './Firebase/firebase';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
-import { useState } from 'react';
 
 function SingleProjectPage(props) {
   const { id } = props.match.params;
@@ -46,6 +45,7 @@ function SingleProjectPage(props) {
           <p>
             <b>Tags: </b>
           </p>
+          <br />
           {project.tags.length > 0 &&
             project.tags.map((tag) => <p key={tag}>{tag}</p>)}
         </div>
