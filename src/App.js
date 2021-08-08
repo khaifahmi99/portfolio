@@ -1,16 +1,18 @@
-import React from 'react';
+import './App.css';
+
 import {
+  Redirect,
+  Route,
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect,
 } from 'react-router-dom';
-import './App.css';
+
+import Academics from './components/Academics';
+import ContactPage from './components/ContactPage';
 import Home from './components/Home';
 import ProjectsPage from './components/ProjectsPage';
+import React from 'react';
 import SingleProjectPage from './components/SingleProjectPage';
-import ContactPage from './components/ContactPage';
-import Academics from './components/Academics';
 import { shouldSeeAcademics } from './config/visibility';
 
 function App() {

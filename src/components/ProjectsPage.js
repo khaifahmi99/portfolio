@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import Typing from 'react-typing-animation';
 
 import db from './Firebase/firebase';
 
-import Navbar from './Navbar';
-import Footer from './Footer';
+/* eslint-disable */
 import Card from './Card';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 function ProjectsPage() {
   const [projects, setProjects] = useState([]);

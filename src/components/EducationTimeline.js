@@ -1,6 +1,6 @@
-import React from 'react';
+import { Event, Timeline } from 'react-timeline-scribble';
 
-import { Timeline, Event } from 'react-timeline-scribble';
+import React from 'react';
 import Typing from 'react-typing-animation';
 
 const EducationTimeline = () => {
