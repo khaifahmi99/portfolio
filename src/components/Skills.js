@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import ReactWordcloud from 'react-wordcloud';
 import Typing from 'react-typing-animation';
-import CanvasJSReact from '../lib/canvasjs.react';
+import { Bar } from 'react-chartjs-2';
 
 function Skills() {
   const [view, setView] = useState('wordcloud');
@@ -94,40 +94,72 @@ function Skills() {
     { text: 'Keras', value: 43 },
   ];
 
-  const CanvasJSChart = CanvasJSReact.CanvasJSChart;
-
-  const options = {
-    title: {
-      text: '',
-    },
-    axisX: {
-      labelFontColor: '#fff',
-      lineColor: '#000',
-      gridThickness: 0,
-    },
-    axisY: {
-      labelFontColor: '#000',
-      lineColor: '#000',
-      gridThickness: 0,
-    },
-    toolTip: {
-      enabled: false,
-    },
-    backgroundColor: 'black',
-    data: [
+  const data = {
+    labels: [
+      'Machine Learning',
+      'Internet of Things',
+      'Web Development',
+      'Cloud Computing',
+      'Mobile Development',
+      'Database Management',
+    ],
+    datasets: [
       {
-        type: 'bar',
-        dataPoints: [
-          { label: 'Project Management', y: 25 },
-          { label: 'Database Management', y: 28 },
-          { label: 'Mobile Development', y: 30 },
-          { label: 'Cloud Computing', y: 40 },
-          { label: 'Web Development', y: 45 },
-          { label: 'Internet of Things', y: 45 },
-          { label: 'Machine Learning', y: 50 },
+        label: '',
+        data: [50, 45, 45, 40, 30, 28],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.8)',
+          'rgba(54, 162, 235, 0.8)',
+          'rgba(255, 206, 86, 0.8)',
+          'rgba(75, 192, 192, 0.8)',
+          'rgba(153, 102, 255, 0.8)',
+          'rgba(255, 159, 64, 0.8)',
         ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+        ],
+        borderWidth: 1,
       },
     ],
+  };
+
+  const options = {
+    indexAxis: 'y',
+    elements: {
+      bar: {
+        borderWidth: 2,
+      },
+    },
+    responsive: true,
+    scales: {
+      xAxis: {
+        display: false,
+      },
+      y: {
+        ticks: {
+          color: 'white',
+          font: {
+            size: 16,
+          },
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+      title: {
+        display: false,
+      },
+      tooltip: {
+        enabled: false,
+      },
+    },
   };
 
   function toggleView() {
@@ -190,7 +222,7 @@ function Skills() {
         </div>
         <br />
         <br />
-        <CanvasJSChart options={options} />
+        <Bar data={data} options={options} />
         <br />
         <br />
         <br />
