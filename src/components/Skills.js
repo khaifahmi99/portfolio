@@ -222,7 +222,7 @@ function Skills() {
         </div>
         <br />
         <br />
-        <Bar data={data} options={options} />
+        <Bar style={{ maxHeight: '300px' }} data={data} options={options} />
         <br />
         <br />
         <br />
