@@ -140,12 +140,11 @@ function ContactPage() {
               </h5>
             </div>
             <div className="col s10 l6 offset-l3 offset-s1 center-align">
-              {/* <p>I can also be reached from any other platform. I can be reached via phone at +61401043474 or my personal email at khaifahmi99@gmail.com. Alternatively, I can be reached via LinkedIn. Let it be to connect, having enquiries, sharing stories, or anything else, do not hesitate and feel free to reach me out.</p> */}
               <p>
                 <a
                   href="https://www.linkedin.com/in/khaifahmi/"
-                  style={{ display: 'block' }}
-                  className="btn black hoverable waves-effect waves-light"
+                  style={{ display: 'block', height: '43px' }}
+                  className="btn black hoverable"
                 >
                   <i className="fa fa-linkedin fa-lg left" aria-hidden="true" />
                   LinkedIn
@@ -153,8 +152,8 @@ function ContactPage() {
               </p>
               <p>
                 <button
-                  style={{ display: 'block' }}
-                  className="btn black hoverable waves-effect waves-light"
+                  style={{ width: '100%', height: '43px' }}
+                  className="btn black hoverable"
                 >
                   <i className="fa fa-phone fa-lg left" aria-hidden="true" />
                   0401043474
@@ -162,8 +161,8 @@ function ContactPage() {
               </p>
               <p>
                 <button
-                  style={{ display: 'block' }}
-                  className="btn black hoverable waves-effect waves-light"
+                  style={{ width: '100%', height: '43px' }}
+                  className="btn black hoverable"
                 >
                   <i className="fa fa-envelope fa-lg left" aria-hidden="true" />
                   khaifahmi99@gmail.com
