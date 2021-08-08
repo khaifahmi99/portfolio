@@ -12,7 +12,7 @@
     "react": "^16.13.1",
     "react-data-table-component": "^6.11.7",
     "react-dom": "^16.13.1",
-    "react-lineto": "^3.2.0",
+    "react-lineto": "^3.2.1",
     "react-loading-skeleton": "^2.2.0",
     "react-profile-card": "^0.1.4",
     "react-router": "^5.2.0",
