@@ -38,7 +38,7 @@ export default class Navbar extends React.Component {
                       border: 'none',
                     }}
                     data-target="mobile-demo"
-                    className="sidenav-trigger"
+                    className="sidenav-trigger hide-on-large-only"
                   >
                     <i className="material-icons">menu</i>
                   </button>
