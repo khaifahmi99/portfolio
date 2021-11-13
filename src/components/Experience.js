@@ -1,8 +1,8 @@
 import React from 'react';
 import Typing from 'react-typing-animation';
 
-import mobble from '../assets/mobble.png';
 import csiro from '../assets/csiro.png';
+import mobble from '../assets/mobble.png';
 import usku from '../assets/usku.png';
 
 const Experience = () => (
@@ -25,6 +25,7 @@ const Experience = () => (
                       className="responsive-img"
                       src={mobble}
                       alt="company-logo"
+                      style={{ padding: '20px' }}
                     />
                   </p>
                 </div>
@@ -39,7 +40,7 @@ const Experience = () => (
                   </div>
                   <div className="col s6 right-align">
                     <span style={{ fontFamily: 'Montserrat' }}>
-                      2021 - Current
+                      2021 - 2021
                     </span>
                   </div>
                   <div className="col s12">
@@ -70,6 +71,7 @@ const Experience = () => (
                       className="responsive-img"
                       src={mobble}
                       alt="company-logo"
+                      style={{ padding: '20px' }}
                     />
                   </p>
                 </div>
