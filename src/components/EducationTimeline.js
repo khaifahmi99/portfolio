@@ -16,12 +16,14 @@ const EducationTimeline = () => {
           title={'Bachelor in Computer Science (Data Science and IoT major)'}
           subtitle={'Swinburne University of Technology | CGPA: 4.0'}
         >
-          Currently in 3rd year of the programme while maintaining a CGPA of 4.0
-          and weighted average mark (WAM) of 88.00% after taking 16 subjects in
-          2 years. Majoring in Data Science and Internet of Things (IoT) while
-          introduced to other units in Web/Mobile application development, cloud
-          computing, data structures, network and security. Expected to graduate
-          in July 2021.
+          {`
+          Graduated from a 3-years bachelor programme with a CGPA of 4.0 (total of 24 units)
+          . Majoring in Data Science and Internet of Things (IoT) while
+          introduced to other areas including Web/Mobile application development, cloud
+          computing, data structures, games, network and security. Also took part in a Final Year Project (FYP)
+          which was a project to develop a visualisation tool in Virtual Reality for Swinburne's 
+          Centre for Astrophysics and Supercomputing and did several internships.
+          `}
         </Event>
         <Event
           interval={'2017 – 2018'}
