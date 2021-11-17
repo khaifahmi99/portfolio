@@ -5,11 +5,13 @@ module.exports = {
     node: true,
     browser: true,
   },
+  parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 9,
+    ecmaVersion: 10,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
+      experimentalObjectRestSpread: true,
     },
   },
   ignorePatterns: ['/node_modules/**', '/build/**', 'amplify/**'],

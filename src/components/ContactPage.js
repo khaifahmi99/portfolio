@@ -1,14 +1,10 @@
-import React from 'react';
-import { useState } from 'react';
-
+import React, { useState } from 'react';
+import Footer from './Footer';
+import Navbar from './Navbar';
 import Typing from 'react-typing-animation';
 
-import Navbar from './Navbar';
-import Footer from './Footer';
-
-import meeting from '../assets/meeting.png';
-
 import db from './Firebase/firebase';
+import meeting from '../assets/meeting.png';
 
 function ContactPage() {
   const [contactForm, updateContactForm] = useState({
@@ -27,6 +23,26 @@ function ContactPage() {
         ...contactForm,
         formType: 'complete',
       });
+
+      // now sending notification to website owner
+      const body = {
+        firstName: contactForm.firstName,
+        lastName: contactForm.lastName,
+        email: contactForm.email,
+        message: contactForm.message,
+      };
+
+      const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        mode: 'no-cors',
+        body: JSON.stringify(body),
+      };
+
+      await fetch(
+        'https://j0fi212de2.execute-api.ap-southeast-2.amazonaws.com/Prod/contact-us',
+        requestOptions
+      );
     } catch (e) {}
   }
 

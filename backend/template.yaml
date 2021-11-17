@@ -1,0 +1,62 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  backend
+
+  Backend for portfolio project
+  
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+
+Parameters:
+  ContactMeTopicName:
+    Type: String
+    Description: "Contact Me Topic Name"
+    Default: 'portfolio-contact-me-topic'
+
+Resources:
+  ContactMeSnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      DisplayName: !Ref ContactMeTopicName
+      TopicName: !Ref ContactMeTopicName
+      Subscription:
+        - Endpoint: khaifahmi99@gmail.com
+          Protocol: email
+
+  ContactMeFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: contact-us/build
+      Handler: app.lambdaHandler
+      Runtime: nodejs14.x
+      Architectures:
+        - x86_64
+      Events:
+        ContactMe:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /contact-us
+            Method: POST
+      Environment:
+        Variables:
+          SNS_TOPIC_ARN: !Ref ContactMeSnsTopic
+      Policies:
+        - SNSPublishMessagePolicy:
+            TopicName: !GetAtt ContactMeSnsTopic.TopicName
+
+Outputs:
+  # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
+  # Find out more about other implicit resources you can reference within SAM
+  # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
+  ApiUrl:
+    Description: "API Gateway endpoint URL for Prod stage functions"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/<endpoint>/"
+  SNSTopicName:
+    Description: "Contact Me SNS Topic Name"
+    Value: !Ref ContactMeTopicName
+  SNSTopicARN:
+    Description: "Contact Me SNS Topic ARN"
+    Value: !Ref ContactMeSnsTopic
