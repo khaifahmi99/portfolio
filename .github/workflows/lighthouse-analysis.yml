@@ -1,0 +1,21 @@
+name: Lighthouse Report
+on: 
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  lighthouseci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Specifying Node Version
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.16.2'
+          
+      - run: npm install && npm install -g @lhci/cli@0.8.x
+      - run: npm run build
+      - run: lhci autorun
