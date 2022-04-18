@@ -19,7 +19,7 @@
     "react-profile-card": "^0.1.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-timeline-scribble": "^1.0.14",
     "react-typing-animation": "^1.6.2",
     "react-wordcloud": "^1.2.6",
